@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vuelamp</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./images/dummy-removebg-preview (1).png">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="./images/menu.png" class="menu-img">
+            <img src="./images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact </a></li>
+                <li><a href="">Login </a></li>
+                <button type="button" onclick="toggleBtn()" id="btn"><span></span> </button>
+            </ul>
+        </nav>
+
+
+        <div class="lamp-container">
+            <img src="./images/lamp.png" class="lamp">
+            <img src="./images/light.png" class="light" id="light">
+        </div>
+        <div class="text-container">
+            <h1>Latest <br>in lighting</h1>
+            <p>this is the first lamp from our company. we're making a huge 
+                collection of modern lamps in all categories from home use to office 
+                use. </p>
+                <a href="">Check All collections </a>
+                <div class="control">
+                    <p>04</p>
+                    <div class="line"><span></span></div>
+                    <p>05</p>
+                </div>
+        </div>
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="./images/4-87.jpeg" alt="Mountain Top">
+            </div>        
+            <div class="image fade">
+            <img src="./images/Light+Bulb.jpgf56ed704-48da-427c-84c0-bc3ffd37c815Larger.jpg" alt="Palm Trees">
+            </div>        
+            <div class="image fade">
+            <img src="./images/hanged-light-bulb-glowing-above-other-bulbs-look-similar-not-sparkle-ground-61873288.webp" alt="Neon Sign">
+            </div>
+          </div>
+        <section class="contact" id="contact">
+            <div class="titre-noir">
+                <h2 class="titre-text"><span>C</span>ontact</h2>
+                <p>Contactez-nous à tous moments.</p>
+            </div>
+            <div class="contactform">
+                <h3>Envoyer un message</h3>
+                <div class="inputboite">
+                    <input type="text" placeholder="Nom" id="input1" >
+                </div>
+                <div class="inputboite">
+                   <input type="text" placeholder="email" id="input2" >
+                </div>
+                <div class="inputboite">
+                   <textarea placeholder="message" id="input3" ></textarea>
+                </div>
+                <div class="inputboite">
+                    <button class="btn-reserve" id="submit-btn" >Envoyer</button>
+                </div>
+            </div>
+        </section>
+       
+        <section class="login" id="login">
+           <div class="titre-noir">
+               <h2 class="titre-text"><span>L</span>ogin</h2>
+           </div>
+           <div class="contactform">
+               <h3>Envoyer un message</h3>
+               <div class="inputboite">
+                   <input type="text" placeholder="Nom" id="input11" >
+               </div>
+               <div class="inputboite">
+                  <input type="password" placeholder="password" id="input22" >
+               </div>
+               <div class="inputboite">
+                   <button class="btn-reserve" id="submit-btn1" >Login</button>
+               </div>
+           </div>
+       </section>
+    </div>
+
+<script>
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+    function toggleBtn(){
+        btn.classList.toggle("active");
+         light.classList.toggle("on");
+    }
+
+</script>
+<script src="main.js"></script>
+</body>
+<footer>
+    <div class="end">
+        pour plus d'information
+    </div>
+    <a href="#">Facebook</a>
+    ,
+    <a href="#">Instagram</a>
+    ,
+    <a href="#">Linkedin</a>
+    ,
+    <a href="#">Email</a>
+    <p>This site uses cookies to deliver services in accordance with this Privacy Policy. You can specify the conditions for storing or accessing cookies on your browser.
+        <br>www.vuelamp.com © 2023</p>
+</footer>
+
+</html>

@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    box-sizing: border-box
+}
+.hero{
+    background:#1d2026;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+nav .menu-img{
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+nav .logo{
+    width: 160px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+button{
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 60px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+
+}
+button span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: background 0.5s, margin-left 0.5s;
+}
+.lamp-container{
+    position: absolute;
+    top: -20px;
+    left: 22%;
+    width: 200px;
+}
+.lamp{
+    width: 100%;
+}
+.light{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+.text-container{
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+.text-container h1{
+    font-size: 80px;
+    font-weight: 400;
+}
+.text-container a{
+    text-decoration: none;
+    background: #00986f;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size:18px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 150px;
+
+}
+.control .line{
+    width: 250px;
+    height: 4px;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 2px;
+}
+.control .line span{
+    width: 50%;
+    height: 8px;
+    margin-top: -2px;
+    border-radius: 4px;
+    background: #00986f;
+    display: block;
+}
+.active{
+    background: green;
+}
+.active span{
+    background: #fff;
+    margin-left: 31px;
+}
+.on{
+    opacity: 1;
+}
+.contact{
+
+    box-shadow: 2px 2px 12px rgba(0,0,0, 0.8);
+    width: 100%;
+
+}
+
+.contactform{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgba(0,0,0, 0.8);
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 38%;
+}
+
+.contactform .inputboite{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactform h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.contactform .inputboite input,
+.contactform .inputboite textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactform .inputboite input[type="submit"]{
+    font-size: 1em;
+    font-weight: 700;
+    color: #ffff;
+    background: #fb911f;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+.image-slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  img {
+    width: 50%
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  @keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+  }
+  .titre-noir{
+    justify-content: center;
+    align-items: center;   
+    margin-left: 38%;
+    margin-top: 50px;
+    padding: 75px 50px;
+  }
+  footer {
+    text-align: center;
+    font-size: 13px;
+    font-family: Roboto, Arial, sans-serif;
+    color: #ababab;
+    padding-left: 100px;
+    padding-right: 100px;
+    background:#1d2026;
+}
